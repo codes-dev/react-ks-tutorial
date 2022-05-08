@@ -1,10 +1,17 @@
 .card-container {
     background: turquoise;
     padding: 20px;
+    -moz-osx-font-smoothing: grayscale;
+    border: 1px solid grey;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
 
     &:hover {
         cursor: pointer;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: scale(1.05);
     }
 
     & > a {

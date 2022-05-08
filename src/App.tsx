@@ -36,6 +36,9 @@ class App extends React.Component<{}, AppState> {
     
     return (
       <div className="App">
+        <header className='header'>
+          <h1>Kodes Store</h1>
+        </header>
         <SearchBox placeholder={'Search Products'} 
         handleChange={this.handleChange} />
         <ProductCardList products={filteredProducts}>          

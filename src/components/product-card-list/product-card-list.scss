@@ -1,9 +1,44 @@
 .product-card-list {
     width: 85vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
     // grid-template-columns: auto auto auto auto;
     row-gap: 20px;
-    column-gap: 10px;
+    column-gap: 20px;
     margin: auto;
+
+    /* Extra small devices (phones, 600px and down) */
+    // @media only screen and (max-width: 600px) {
+    //     & {
+    //         grid-template-columns: auto;
+    //     }
+    // }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    // @media only screen and (min-width: 600px) {
+    //     & {
+    //         grid-template-columns: auto;
+    //     }
+    // }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        & {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        & {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        & {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
 }
